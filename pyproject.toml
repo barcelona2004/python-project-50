@@ -11,6 +11,7 @@ python = "^3.8"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
+hello = "gendiff.scripts.hello:main"
 
 [build-system]
 requires = ["poetry-core"]

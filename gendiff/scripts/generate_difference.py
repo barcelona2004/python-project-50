@@ -14,7 +14,7 @@ def generate_diff(file_path1, file_path2):
             if file1[key] == file2[key]:
                 dict_[key] = file1[key]
             else:
-                dict_minus[key+'-'] = file1[key]
+                dict_minus[key + '-'] = file1[key]
                 dict_plus[key+'+'] = file2[key]
     for key in file2.keys():
         if key not in file1.keys():
@@ -30,4 +30,5 @@ def generate_diff(file_path1, file_path2):
             line += f" {i}: {dictionary[i]}\n"
         else:
             line += f"{i[-1]}{i[:-1]}: {dictionary[i]}\n"
+    print(line+'}')
     return line+'}'

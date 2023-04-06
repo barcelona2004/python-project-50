@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-import argparse
-import json
 from gendiff.cli import parse_cli_args
-from gendiff.scripts.generate_difference import generate_diff
+from gendiff import generate_diff
 
 def main():
     path1, path2 = parse_cli_args()

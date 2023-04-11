@@ -32,7 +32,8 @@ def sort_dicts(dictionary):
         else:
             line += f"{i[-1]}{i[:-1]}: {dictionary[i]}\n"
     return line
-    
+
+
 def generate_diff(file_path1, file_path2):
     dictionary = {}
     file1 = json.load(open(f"{file_path1}"))

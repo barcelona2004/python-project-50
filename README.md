@@ -3,4 +3,5 @@
 <a href="https://codeclimate.com/github/barcelona2004/python-project-50/maintainability"><img src="https://api.codeclimate.com/v1/badges/f34c62de24c688f9a7ce/maintainability" /></a>
 <a href="https://codeclimate.com/github/barcelona2004/python-project-50/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f34c62de24c688f9a7ce/test_coverage" /></a>
 
-how it works - https://asciinema.org/a/rHUHZmG4zMBUmVvjTCyTU7tnf
+how it works for json files - https://asciinema.org/a/rHUHZmG4zMBUmVvjTCyTU7tnf
+how it works for yaml files - https://asciinema.org/a/qOyFLLXxE2cKjDxQKDrWSMV3H

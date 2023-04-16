@@ -9,4 +9,4 @@ def parse_cli_args():
     parser.add_argument("-f", "--format", help="set format of output",
                         default='stylish', type=str)
     args = parser.parse_args()
-    return args.first_file, args.second_file
+    return args.first_file, args.second_file, args.format

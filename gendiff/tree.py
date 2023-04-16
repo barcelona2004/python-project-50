@@ -7,10 +7,10 @@ def get_diff(old_dict: dict, new_dict: dict) -> OrderedDict:
     only_new_keys = set(new_dict.keys()) - set(old_dict.keys())
     both_keys = old_dict.keys() & new_dict.keys()
     for key in only_old_keys:
-        gen_dict[key] = {'status': '-', 'value': old_dict[key]}
+        gen_dict[key] = {'status': 'removed', 'value': old_dict[key]}
 
     for key in only_new_keys:
-        gen_dict[key] = {'status': '+', 'value': new_dict[key]}
+        gen_dict[key] = {'status': 'added', 'value': new_dict[key]}
 
     for key in both_keys:
         old_value = old_dict[key]

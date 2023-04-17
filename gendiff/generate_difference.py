@@ -1,6 +1,5 @@
 from gendiff.tree import get_diff
 from gendiff.parser import get_data
-from gendiff.formatters.stylish_format import format
 from gendiff.formatters.formatt import formatt
 
 

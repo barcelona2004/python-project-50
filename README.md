@@ -8,3 +8,5 @@ how it works for json files - https://asciinema.org/a/rHUHZmG4zMBUmVvjTCyTU7tnf
 how it works for yaml files - https://asciinema.org/a/qOyFLLXxE2cKjDxQKDrWSMV3H
 
 how it works for big data - https://asciinema.org/a/iVZo1XCnAqCxVqiyxwp1babPl
+
+how it works for plain format - https://asciinema.org/a/oGUPFIiqwctuVnZMMk6ht8fta

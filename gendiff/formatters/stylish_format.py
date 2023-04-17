@@ -1,10 +1,12 @@
 from gendiff.formatters.normalize import normalize_values
 
 STATUS = {
-        'unchanged': "  ",
-        'added': "+ ",
-        'removed': "- "
-    }
+    'unchanged': "  ",
+    'added': "+ ",
+    'removed': "- "
+}
+
+
 def stringify_val(value, depth: int) -> str:
     if not isinstance(value, dict):
         return value

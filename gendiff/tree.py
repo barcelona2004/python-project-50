@@ -16,10 +16,12 @@ def get_diff(old_dict: dict, new_dict: dict) -> OrderedDict:
         old_value = old_dict[key]
         new_value = new_dict[key]
         if isinstance(old_value, dict) and isinstance(new_value, dict):
-            gen_dict[key] = {'status': 'nested', 'value': get_diff(old_value, new_value)}
+            gen_dict[key] = {'status': 'nested',
+                             'value': get_diff(old_value, new_value)}
         elif old_value == new_value:
             gen_dict[key] = {'status': 'unchanged', 'value': old_value}
         elif old_value != new_value:
-            gen_dict[key] = {'status': 'changed', 'old': old_value, 'new': new_value}
+            gen_dict[key] = {'status': 'changed',
+                             'old': old_value, 'new': new_value}
 
     return OrderedDict(sorted(gen_dict.items()))

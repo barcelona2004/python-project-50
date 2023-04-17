@@ -1,5 +1,4 @@
 from gendiff.formatters.normalize import normalize_values
-from gendiff.parser import get_data
 
 
 def string(data):

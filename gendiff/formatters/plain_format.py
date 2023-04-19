@@ -3,7 +3,7 @@ from gendiff.formatters.normalize import normalize_values
 
 def string(data):
     if isinstance(data, (tuple, dict, list, set)):
-        return f'[complex value]'
+        return '[complex value]'
     elif data in ('null', 'true', 'false'):
         return data
     else:

@@ -1,16 +1,18 @@
 from collections import OrderedDict
 
 
+def append_keys(from_, to, const, status):
+    for key in from_:
+        to[key] = {'status': status, 'value': const[key]}
+
+
 def get_diff(old_dict: dict, new_dict: dict) -> OrderedDict:
     gen_dict = {}
     only_old_keys = set(old_dict.keys()) - set(new_dict.keys())
     only_new_keys = set(new_dict.keys()) - set(old_dict.keys())
     both_keys = old_dict.keys() & new_dict.keys()
-    for key in only_old_keys:
-        gen_dict[key] = {'status': 'removed', 'value': old_dict[key]}
-
-    for key in only_new_keys:
-        gen_dict[key] = {'status': 'added', 'value': new_dict[key]}
+    append_keys(only_old_keys, gen_dict, old_dict, "removed")
+    append_keys(only_new_keys, gen_dict, new_dict, "added")
 
     for key in both_keys:
         old_value = old_dict[key]

@@ -13,8 +13,8 @@ def string(data):
 STRING = {
     'unchanged': '',
     'removed': "Property '{path}' was removed",
-    'added': "Property '{path}' was added with value: '{v}'",
-    'changed': "Property '{path}' was updated. From '{old_v}' to '{new_v}'"
+    'added': "Property '{path}' was added with value: {v}",
+    'changed': "Property '{path}' was updated. From {old_v} to {new_v}"
 }
 
 

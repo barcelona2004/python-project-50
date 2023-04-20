@@ -4,7 +4,7 @@ from gendiff.formatters.normalize import normalize_values
 def string(data):
     if isinstance(data, (tuple, dict, list, set)):
         return '[complex value]'
-    elif data in ('null', 'true', 'false'):
+    elif data in ('null', 'true', 'false', 0):
         return data
     else:
         return f"'{data}'"

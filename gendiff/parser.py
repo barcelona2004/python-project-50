@@ -1,18 +1,14 @@
 import json
 import yaml
 import os
-from yaml.loader import SafeLoader
 
 
 def get_data(path: str) -> dict:
+    f = open(path)
     _, extension = os.path.splitext(path)
     if extension == '.json':
-        with open(path) as f:
-            data = json.load(f)
-            return data
+        return json.load(f)
     elif extension == '.yaml' or extension == '.yml':
-        with open(path) as f:
-            data = yaml.load(f, Loader=SafeLoader)
-            return data[0]
+        return yaml.safe_load(f)
     else:
         raise ValueError(f"Wrong extenssion {extension}")

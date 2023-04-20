@@ -15,4 +15,4 @@ def get_data(path: str) -> dict:
             data = yaml.load(f, Loader=SafeLoader)
             return data[0]
     else:
-        raise ValueError(f"Wrong extension {extension}")
+        raise ValueError(f"Wrong extenssion {extension}")

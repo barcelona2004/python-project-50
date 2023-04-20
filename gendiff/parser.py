@@ -9,6 +9,6 @@ def get_data(file_path: str) -> dict:
     if extension == '.json':
         return json.load(f)
     elif extension == '.yaml' or extension == '.yml':
-        return yaml.safe_load(f)[0]
+        return yaml.safe_load(f)
     else:
         raise ValueError(f"Wrong extension {extension}")

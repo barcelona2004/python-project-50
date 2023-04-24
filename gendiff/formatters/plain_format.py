@@ -1,5 +1,12 @@
 from gendiff.formatters.normalize import normalize_values
 
+STRING = {
+    'unchanged': '',
+    'removed': "Property '{path}' was removed",
+    'added': "Property '{path}' was added with value: {value}",
+    'changed': "Property '{path}' was updated. From {old_val} to {new_val}"
+}
+
 
 def string(data):
     if isinstance(data, (tuple, dict, list, set)):
@@ -8,14 +15,6 @@ def string(data):
         return data
     else:
         return f"'{data}'"
-
-
-STRING = {
-    'unchanged': '',
-    'removed': "Property '{path}' was removed",
-    'added': "Property '{path}' was added with value: {v}",
-    'changed': "Property '{path}' was updated. From {old_v} to {new_v}"
-}
 
 
 def plain_diff(diff: dict, parent='') -> list:
@@ -30,14 +29,14 @@ def plain_diff(diff: dict, parent='') -> list:
             lst.extend(plain_diff(val['value'], parent))
             parent = parent[:-1]
         else:
-            v = string(val.get('value'))
-            old_v = string(val.get('old'))
-            new_v = string(val.get('new'))
+            value = string(val.get('value'))
+            old_val = string(val.get('old'))
+            new_val = string(val.get('new'))
             lst.append(STRING.get(status).format(
                 path=path,
-                v=v,
-                old_v=old_v,
-                new_v=new_v))
+                value=value,
+                old_val=old_val,
+                new_val=new_val))
         parent = parent[:-1]
     return lst
 

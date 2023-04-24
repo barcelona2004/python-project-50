@@ -11,8 +11,8 @@ def stringify_val(value, depth: int) -> str:
     if not isinstance(value, dict):
         return value
     hold = ["{"]
-    for k, v in value.items():
-        hold.append(f"\n{'  ' * depth}  {k}: {stringify_val(v, depth + 2)}")
+    for key, val in value.items():
+        hold.append(f"\n{'  ' * depth}  {key}: {stringify_val(val, depth + 2)}")
     hold.append(f"\n{'  ' * (depth - 1)}}}")
     return ''.join(hold)
 

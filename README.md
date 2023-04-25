@@ -3,6 +3,8 @@
 <a href="https://codeclimate.com/github/barcelona2004/python-project-50/maintainability"><img src="https://api.codeclimate.com/v1/badges/f34c62de24c688f9a7ce/maintainability" /></a>
 <a href="https://codeclimate.com/github/barcelona2004/python-project-50/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f34c62de24c688f9a7ce/test_coverage" /></a>
 
+This package finds difference between two files(json or yml)
+
 Poetry version - 6.0.0 Python version - 3.10 
 
 how to install gendiff package

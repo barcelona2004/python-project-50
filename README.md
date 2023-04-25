@@ -3,6 +3,11 @@
 <a href="https://codeclimate.com/github/barcelona2004/python-project-50/maintainability"><img src="https://api.codeclimate.com/v1/badges/f34c62de24c688f9a7ce/maintainability" /></a>
 <a href="https://codeclimate.com/github/barcelona2004/python-project-50/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f34c62de24c688f9a7ce/test_coverage" /></a>
 
+Poetry version - 6.0.0 Python version - 3.10 
+
+how to install gendiff package
+[![asciicast](https://asciinema.org/a/Bf6yaRclezcZQfStvLClUlRCr.svg)](https://asciinema.org/a/Bf6yaRclezcZQfStvLClUlRCr)
+
 how it works for json files 
 [![asciicast](https://asciinema.org/a/rHUHZmG4zMBUmVvjTCyTU7tnf.svg)](https://asciinema.org/a/rHUHZmG4zMBUmVvjTCyTU7tnf)
 
